@@ -1,0 +1,77 @@
+Last login: Wed May 17 17:56:26 on ttys000
+(base) zhoubingjie@shuishuideMac ~ % git v
+git: 'v' is not a git command. See 'git --help'.
+
+The most similar command is
+	mv
+(base) zhoubingjie@shuishuideMac ~ % git -v
+git version 2.39.2 (Apple Git-143)
+(base) zhoubingjie@shuishuideMac ~ % 
+git config --global user.name "zhoubingjie"
+(base) zhoubingjie@shuishuideMac ~ % 
+git config --global user.email "bj.zhou@foxmail.com"
+(base) zhoubingjie@shuishuideMac ~ % ssh-keygen -t rsa -C "bj.zhou@foxmail.com"
+Generating public/private rsa key pair.
+Enter file in which to save the key (/Users/zhoubingjie/.ssh/id_rsa): 
+Created directory '/Users/zhoubingjie/.ssh'.
+Enter passphrase (empty for no passphrase): 
+Enter same passphrase again: 
+Your identification has been saved in /Users/zhoubingjie/.ssh/id_rsa
+Your public key has been saved in /Users/zhoubingjie/.ssh/id_rsa.pub
+The key fingerprint is:
+SHA256:E9y264aQLGLcPkAficCqyT6BAih3WfUDtf5Sj09xcmM bj.zhou@foxmail.com
+The key's randomart image is:
++---[RSA 3072]----+
+|.      .o..      |
+|..    .. + .     |
+|o. . +  o *      |
+|= + =    + o     |
+|*= + o .S o . oEo|
+|=o= + +  . + o.=.|
+|o..+ . . .o o o  |
+| o  o   .... o   |
+|  .  .   ..   .  |
++----[SHA256]-----+
+(base) zhoubingjie@shuishuideMac ~ % cat Users/zhoubingjie/.ssh/id_rsa.pub 
+cat: Users/zhoubingjie/.ssh/id_rsa.pub: No such file or directory
+(base) zhoubingjie@shuishuideMac ~ % cat /Users/zhoubingjie/.ssh/id_rsa.pub
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQC6UbMyjQGzGP/57JDGx59jVAYpLvuaGU8grvtR8P8Xd/BWnEEHNAaWQO/nTp37HPBBbxrCejHVcMjJwbTz7nfmsnc40wVSnGYsK8WhCc+l6ihqsAtK0zNfbHvosb0kFxOzHeuSZUKnUpNvmLXyt+lbMD/dxfUaBxfxPZy+lGdXVtLbQqtB7tOSOwSeOA+msluvc1EP5wzcf8uvkA3y+OHHrjkW7Nou6eCS0w2FdLxUWJkLfv24vYjbOovEQFG+v4Mb1u6CtmhtH4NBUrT/RBk+RWKfY5W5WTLLfJZgKqzvc6yKMJRas0G8PgSEk1BgvimMeleijo016i8oKtDIwSaYOB3ReWcfVQHc95zF8hGNtIaAumk77OYaUXTQt0P45RKSLnyCE6zo4xRL54wiWtxosPle+0hHTjtPmliZr+r+/cd9HYtHpprIxld8RbYBENxu405N+3LHTaGu3iBN7wKnwR3T/6QtoHWVyMxEwIwg/md0LG5Oxf4aVdRRML2YMV8= bj.zhou@foxmail.com
+(base) zhoubingjie@shuishuideMac ~ % ssh -T git@github.com
+The authenticity of host 'github.com (20.205.243.166)' can't be established.
+ED25519 key fingerprint is SHA256:+DiY3wvvV6TuJJhbpZisF/zLDA0zPMSvHdkr4UvCOqU.
+This key is not known by any other names
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'github.com' (ED25519) to the list of known hosts.
+Hi ZhouJie1101! You've successfully authenticated, but GitHub does not provide shell access.
+(base) zhoubingjie@shuishuideMac ~ % mkdir learngit
+(base) zhoubingjie@shuishuideMac ~ % cd learngit
+(base) zhoubingjie@shuishuideMac learngit % pwd
+/Users/zhoubingjie/learngit
+(base) zhoubingjie@shuishuideMac learngit % git init
+Initialized empty Git repository in /Users/zhoubingjie/learngit/.git/
+(base) zhoubingjie@shuishuideMac learngit % vim sample.txt
+
+crazy
+~                                                                                                               
+~                                                                                                               
+~                                                                                                               
+~                                                                                                               
+~                                                                                                               
+~                                                                                                               
+~                                                                                                               
+~                                                                                                               
+~                                                                                                               
+~                                                                                                               
+~                                                                                                               
+~                                                                                                               
+~                                                                                                               
+~                                                                                                               
+~                                                                                                               
+~                                                                                                               
+~                                                                                                               
+~                                                                                                               
+~                                                                                                               
+~                                                                                                               
+~                                                                                                               
+~                                                                                                               
+-- INSERT -- 
